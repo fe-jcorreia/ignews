@@ -7,4 +7,12 @@ module.exports = {
   },
   moduleNameMapper: {"\\.(scss|css|sass)$": 'identity-obj-proxy'}, // biblioteca que traduz scss, css e sass
   testEnvironment: "jsdom", // em que ambiente estamos executando os testes para saber como o jest deve se comportar
+  collectCoverage: true,
+  collectCoverageFrom: [
+    "src/**/*.tsx",
+    "!src/**/*.spec.tsx",
+    "!src/**/_app.tsx",
+    "!src/**/_document.tsx",
+  ],
+  coverageReporters: ["lcov", "json"],
 };
