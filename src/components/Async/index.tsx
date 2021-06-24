@@ -6,7 +6,7 @@ export function Async() {
 
   useEffect(() => {
     setTimeout(() => {
-      setIsButtonVisible(true);
+      setIsButtonInvisible(true);
     }, 1000);
   }, []);
 
